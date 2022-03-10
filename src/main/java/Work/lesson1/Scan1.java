@@ -1,7 +1,4 @@
 package Work.lesson1;
-
-//import java.util.Scanner;
-
 public class Scan1 {
     public static void main(String[] args) {
         System.out.println("Hello" + " " + args[0]);
