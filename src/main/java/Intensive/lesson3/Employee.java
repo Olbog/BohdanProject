@@ -14,7 +14,7 @@ public class Employee {
         mas[4] = new EmployeePerson("Izumin Idrak", "Engineer5", "izumin@mail.ru", 57836146, 3500, 43);
 
         for(int a=0; a < mas.length; a++ ){
-            if (mas[a].age >=40){
+            if (mas[a].getAge()>=40){
                 System.out.println(mas[a]);
                 System.out.println("\n");
             }
@@ -25,12 +25,12 @@ public class Employee {
 
 }
 class EmployeePerson {
-    String fio;
-    String post;
-    String email;
-    int phone;
-    int salary;
-    int age;
+    private String fio;
+    private String post;
+    private String email;
+    private int phone;
+    private int salary;
+    private int age;
 
 
 
@@ -41,6 +41,9 @@ class EmployeePerson {
         this.phone = phone;
         this.salary = salary;
         this.age = age;
+    }
+    public int getAge(){
+        return age;
     }
 
 
